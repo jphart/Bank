@@ -58,9 +58,11 @@ environments {
     }
     development {
         grails.serverURL = "http://localhost:8080/${appName}"
+        grails.mail.port = com.icegreen.greenmail.util.ServerSetupTest.SMTP.port
     }
     test {
         grails.serverURL = "http://localhost:8080/${appName}"
+        grails.mail.port = com.icegreen.greenmail.util.ServerSetupTest.SMTP.port
     }
 
 }
@@ -70,9 +72,9 @@ log4j = {
     // Example of changing the log pattern for the default console
     // appender:
     //
-    //appenders {
-    //    console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
-    //}
+    appenders {
+        console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
+    }
 
     error  'org.codehaus.groovy.grails.web.servlet',  //  controllers
            'org.codehaus.groovy.grails.web.pages', //  GSP

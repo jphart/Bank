@@ -25,3 +25,6 @@
 
 # plugin release file
 /*.zip
+
+# Builds
+/target
