@@ -28,3 +28,6 @@
 
 # Builds
 /target
+
+# Coverage tools
+/*.ser
